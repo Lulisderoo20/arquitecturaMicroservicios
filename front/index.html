@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P>hola a todos youtubers bienvenidos al
+        canal dentro del desarrollo de software
+        en los últimos años uno de los términos
+        y tecnologías que más se ha comenzado a
+        usar son las arquitecturas basadas en
+        microservicios en el vídeo el día de hoy
+        vamos a estar hablando sobre cómo
+        prepararse para poder introducirse en
+        este mundo del desarrollo basada en
+        microservicios y cómo iniciar una
+        carrera como desarrollador en esta área
+        de conocimiento para ello vamos a
+        dividir la charla en dos partes
+        inicialmente hablaremos sobre algunos
+        patrones importantes que debemos conocer
+        para desarrollar microservicios y en una
+        segunda parte de la charla estaré
+        recomendando algunas tecnologías que uso
+        y que he probado en los últimos años y
+        que son muy buenos para desarrollar y
+        promover este tipo de arquitectura
+        dentro del desarrollo de software vamos
+        con la presentación y seguimos con el
+        vídeo bienvenidos todos
+        [Música]
+        el primero de mente importante para
+        iniciarse en la arquitectura
+        microservicios así como en cualquier
+        área del desarrollo del software
+        consiste en conocer las buenas prácticas
+        que son necesarias y que están probadas
+        para desarrollar sistemas informáticos
+        específicamente el área de los
+        microservicios tiene sus patrones y
+        buenas prácticas particulares que se han
+        ido probando a lo largo de muchos años y
+        son muy eficientes y además recomendadas
+        y casi obligatorias para poder
+        implementar este tipo de sistemas para
+        ello vamos a vivir los patrones en cinco
+        grupos en un primer momento vamos a
+        hablar de los patrones por la
+        descomposición patrones para la
+        infraestructura patrones para la
+        integración patrones de acceso a datos
+        patrones de la cierva habilidad y
+        armamos maldad de un grupo de patrones
+        que son útiles para la integración con
+        servicios externos a nuestra
+        arquitectura muchos servicios comencemos
+        por el primer grupo que son los patrones
+        para la descomposición en el desarrollo
+        del software y específicamente en el
+        área de microservicios la parte más
+        compleja a la hora
+        la arquitectura basada en los servicios
+        consiste en determinar cuáles son los
+        microservicios que vamos a llevar a
+        forma parte de la arquitectura y
+        específicamente cómo organizarlos y
+        segregar los para que funcionen
+        correctamente y no traen problemas
+        asociados que son típicos de las
+        arquitecturas basadas en microservicios
+        específicamente hay un grupo de patrones
+        dentro de estas áreas de descomposición
+        que son importantes ver vamos a
+        mencionar algunos solamente y en otros
+        vídeos los abordaremos más en
+        profundidad dentro de los patrones para
+        la descomposición
+        tenemos los padrones para la
+        descomposición con capacidades de
+        negocio donde los microservicios
+        resultantes de este proceso se acercan
+        más a las áreas de negocio y menos a la
+        tecnología
+        hay un patrón específicamente dentro del
+        área la descomposición que es el patrón
+        basado en descomposición por capacidades
+        dominio o básicamente es un patrón de
+        composición que se basa en el enfoque
+        del down mind driving design o de cómo
+        se conoce que es un patrón o un informe
+        que básicamente está se desarrolla bajo
+        la arquitectura monolítica pero que al
+        iniciarse en desarrollo de medios
+        servicios se buscó una forma de aportar
+        que el patrón hacia la arquitectura
+        mayor servicio este enfoque de
+        desarrollo aplicaciones basada en redes
+        también es aplicable al desarrollo de
+        muchos servicios además existe otro
+        patrón que empadrone strangler strangler
+        es un patrón de triangulación que se
+        basa básicamente o se usa
+        fundamentalmente cuando estamos
+        descomponiendo una aplicación monolítica
+        va haciendo una migración de una
+        aplicación monolítica a una
+        infraestructura de los servicios es un
+        patrón que básicamente nos ayuda
+        cómo aplicar una buena práctica para
+        poder ir estrangulando ese monolito y
+        descomponiendo lo en pequeños micros
+        servicios de tal forma que los
+        microservicios que van saliendo de ese
+        monolito no queden atados al monolito en
+        sí y por lo tanto lleven hacia
+        microservicios las malas prácticas que
+        probablemente estuvieron en monolito en
+        algún momento y el otro patrón muy
+        relacionado con este es el patrón bull
+        heat que también se usa o se aplica en
+        la el momento de la descomposición de un
+        monolito hacia una arquitectura
+        microservicios el segundo grupo de
+        patrones que vamos a hablar son los
+        patrones de infraestructura éstos
+        probablemente sean los patrones más
+        importantes o más comúnmente usados por
+        las personas que iniciamos que se
+        inician en el mundo del desarrollo
+        microservicios dentro de los padres para
+        la infraestructura se agrupan aquellos
+        patrones que tienen como objetivo o como
+        función fundamental soportar ese grupo
+        de servicios que ahora van a estar
+        segregados entre distintos nodos o
+        entiendo los contenedores de nuestra
+        la forma y además ayudan se sirven para
+        manejar este grupo de micro servicios
+        para ello el sitio de un grupo de
+        patrones importantes que vamos a estar
+        viendo entre ellos están el patrón de
+        configuración centralizada que se
+        encarga básicamente de definir un lugar
+        donde va a estar todas las
+        configuraciones de las aplicaciones y
+        cada vez que se inicie o se levante una
+        nueva instancia de los servicios ese
+        microservicios va a saber dónde tiene
+        que ir a buscar su configuración
+        específica y a partir de ahí iniciará
+        con sus con las configuraciones
+        obtenidas desde este lugar además este
+        existe en padrón de service discovery o
+        el patrón de descubrimiento y registros
+        registros de descubrimiento básicamente
+        en uno de los patrones más importantes
+        dentro de la arquitectura microservicios
+        porque le daba responsabilidad y además
+        nos permite tener en un lugar único o
+        poster izado cuáles son todos aquellos
+        microservicios que tenemos de
+        infraestructura y dónde están
+        registrados cada uno cuando nosotros
+        tenemos una arquitectura microservicios
+        básicamente tenemos muchos lodos y estos
+        nodos
+        normalmente en contenedores o en
+        instancias de computadoras diferentes
+        donde tienen diferentes direcciones ip
+        los diferentes nombres de dominio y como
+        los arquitectura microservicios
+        fundamentalmente se basa en una su
+        ventaja que poder escalar cada a cada
+        momento se están levantando o bajando
+        instancias de la arquitectura
+        independencia de la demanda que está
+        teniendo en ese momento cada vez que se
+        levanta una nueva instancia esa nueva
+        instancia trae consigo el registro en
+        este este micro servicios de
+        descubrimiento de donde en qué lugar
+        estas instancias levantadas cuál es su
+        dirección ip por ejemplo para que para
+        que otros microservicios de reestructura
+        sepan ir directamente hacia ese nodo y
+        consumir ese servicio
+        previamente se levantó al igual cuando
+        ese servicio se baja porque no hace
+        falta porque baja el nivel de demanda de
+        la infraestructura ya automáticamente
+        los medios de nombre y los servicios a
+        través de servicios de descubrimientos
+        saben que ese micro servicios no está
+        disponible y por lo tanto no le hacen
+        una petición directa a un micro servicio
+        que ya no está disponible que ya no está
+        activo dentro
+        de la infraestructura otros servicios
+        muy relacionados más descubrimientos es
+        el balance de carga el balance del k que
+        se basa básicamente en cuando tenemos
+        varias instancias de un mismo y los
+        servicios levantados poder ir
+        balanceando la cara que en dependencia
+        de alguna estrategia la más común de
+        ellas es la estrategia de 'round robin'
+        donde se va emitiendo una petición a
+        cada uno de las instancias de un hilo
+        servicio para ir balanceando la caja
+        pero existen otras estrategias como la
+        estrategia de definición geográfica o
+        cantidades de recursos que tiene que
+        está consumiendo una instancia
+        determinada sí
+        se le va pasando la petición a la
+        instancia que menos recursos están
+        consumiendo en ese momento y así existen
+        diferentes estrategias otras y otro
+        patrón de infraestructuras son los
+        patrones de intentos y los patrones sin
+        quebrar en los patrones de intento de
+        ciclo pre que se basan básicamente en
+        añadir resiliencia de resistencia a la
+        arquitectura básicamente si tenemos un
+        grupo de microservicios donde uno de los
+        servicios de una llamada ahorro micro
+        servicio a un servicio externo de la
+        infraestructura básicamente tenemos que
+        garantizar de que puede existir algún
+        fallo en la red temporal o transitorios
+        y básicamente cuando se hace una llamada
+        de uno y los servicios de servicio vea
+        que está re intentando si falla para
+        tratar de completar la solicitud de nos
+        ha hecho el cliente y por lo tanto
+        el padrón de reintentos nos ayuda a
+        garantizar esto y el padrón de siembra
+        que por su parte se encarga de
+        básicamente cierto sucede entonces esto
+        sucede y no se había alcanzado a un
+        número de intentos determinados no se
+        logra completar la solicitud para que el
+        servicio no se quede de alguna forma
+        aforado o enfrascado tratando de hacer
+        el intento innecesario consumiendo el
+        recurso de la infraestructura
+        básicamente sin que el pliegue realice
+        una apertura del circuito y a partir de
+        ahí va alguna estrategia se debe a una
+        solicitud predeterminada o un fármaco o
+        básicamente también se puede cada cierto
+        tiempo tratar de cerrar el circuito y
+        ver si efectivamente se recuperó el
+        servicio destino para hacer la
+        completitud de la solicitud estos dos
+        servicios son muy importantes
+        otro de los patrones infraestructuras
+        importantes el patrón azul verde es tema
+        drone en un padrón que efectivamente nos
+        va a garantizar aumentar la
+        disponibilidad de la infraestructura o
+        de cuando ocurre un file mucho más
+        generalizado en la infraestructura y nos
+        va a permitir tener una infraestructura
+        paralela de microservicios imaginemos
+        que estamos usando una
+        una infraestructura en la zona w es
+        donde tenemos todos nuestros primeros
+        servicios en una región y básicamente
+        ocurre un fallo en esa región y
+        necesitamos mantener a disponer de la
+        disponibilidad de la infraestructura del
+        pavoroso sven de las familias del en dos
+        infraestructuras paralelas una
+        infraestructura sobre una vende donde la
+        infraestructura es un estado para ti
+        efectivamente y ante un fallo
+        generalizado la infraestructura se puede
+        pasarle a la infraestructura mente y así
+        garantizar la disponibilidad de
+        servicios además esto se usa también
+        para fines de pruebas en en producción
+        sin afectar de alguna manera la
+        estructura productiva real que está
+        activa en ese momento además en los
+        patrones de infraestructuras existen
+        otros grupos de patrones que son los
+        patrones de integración entre los
+        patrones de integración podemos
+        encontrar el más popular de todos es
+        patrona peewee un open way es un punto
+        único o es un lápiz que nos garantice un
+        punto único de acceso a la
+        infraestructura cuando tenemos
+        microservicios dos medios envíos se
+        encarguen se encuentran desagregados en
+        cientos de
+        de servicios en la arquitectura cada uno
+        de estos servicios por lo general expone
+        apis que pueden ser de otro tipo y el
+        cliente el elemento que va a consumir la
+        infraestructura desde afuera no tenemos
+        que conocer todos los en pos de todos
+        los micro servicios que tenemos en
+        nuestra infraestructura patronal y
+        gateway nos va a permitir eso
+        centralizar todos esos a través de un
+        única amigo un ningún punto de acceso y
+        poder ofrecer al exterior
+        un punto de acceso única hacia todas mis
+        lecturas de tal forma que el exterior
+        vea nuestra infraestructura como si
+        fuera básicamente un monolito único pero
+        en realidad en los únicos que hace es
+        centralizar y distribuir hacia ser más
+        microservicios en la arquitectura el
+        patrón a piqué tiene otras funciones
+        también como son unas funciones de
+        registro de autorización funciones
+        además de login o funciones de
+        aplicación de alguna política sobre los
+        riesgos y los response
+        que se entregan a los usuarios oa las
+        aplicaciones clientes que finalmente
+        hacen los link webs así en la
+        infraestructura pero básicamente su
+        función principal es la centralización
+        y garantizar que existe un punto único
+        de acceso a nuestra infraestructura otro
+        de los patrones para la integración es
+        el padrón publicado suscriptores que se
+        emplea para crear un punto de
+        comunicación asíncrona en el cual las
+        aplicaciones estén suscritas a
+        determinados eventos y a partir de un
+        bus evento se programa hacer
+        publicaciones eventos y las aplicaciones
+        puedan consumirlos a partir de ahí
+        pueden ser tanto dentro de la
+        infraestructura como fuera de la
+        infraestructura otro de los patrones más
+        importantes son estas relacionadas con
+        la forma en que se van a manejar pares
+        microservicios cuando nosotros tenemos
+        varios microservicios por ejemplo un
+        microservicios que se encarga de
+        ejecutar pagos y un micro servicio que
+        se encargue de ejecutar o de crear
+        órdenes cuando se crea una donde dice
+        que se va a hacer el pago que pueden ser
+        en microservicios diferente
+        ese es el manejo de cómo se va a
+        realizar ese proceso debe ser realizado
+        por un millón servicio de nivel superior
+        existen muchos servicios de nivel base
+        que básicamente tiene una lógica más
+        sencilla y sobre todo permiten lógica de
+        acceso hablo de independencia desde la
+        forma en que se ha descompuesto el
+        servicio y las funciones que tenga y
+        existen unos micros servicios que son de
+        nivel superior digamos que se encargan
+        de interactuar con estos servicios
+        esos micro servicios del nivel superior
+        se pueden desarrollar bajo dos enfoques
+        fundamentales un enfoque de fotografía y
+        un enfoque de orquestación la diferencia
+        fundamental es en la responsabilidad que
+        le dejamos a ese micro servicio de nivel
+        superior relacionados con simplemente a
+        uno una función de lógica de negocio
+        también existen muchos enfoques para
+        este tipo de micro servicios básicamente
+        existen enfoque basado incluso en
+        tecnologías bpm en donde a partir de
+        modelado del flujo de procesos de
+        negocio se puede estar en este tipo de
+        sistemas y poder interactuar dos
+        servicios los dos micros servicios de
+        nivel inferior a partir de un proceso de
+        fm y sin necesidad de añadir código de
+        exigencia añadir podría adicional
+        aliento por supuesto flexibiliza mucho
+        el tema de la infraestructura y uno de
+        los patrones más tarde nos
+        relacionábamos la integración en el
+        patrón zaga el patrón cuando uno es real
+        y los servicios uno de los grandes
+        problemas los microservicios del tema de
+        la transición ali that imaginemos cómo
+        vamos al ejemplo del micro servicio de
+        dos de mes y medio servicio de pagos
+        cuando nosotros vamos y creamos una
+        orden que vamos a efectuar el pago
+        creamos la orden y los servicios del
+        hotel y después vamos a nuestro servicio
+        de pagos a efectuar el pago si cuando
+        vamos a efectuar el pago es esa página
+        abc el cliente que va a efectuar el pago
+        en realidad no tiene fondo suficiente
+        esa orden de alguna forma debería
+        dehesas en sí
+        porque la donde probablemente involucra
+        que un producto que hace esa cover esto
+        o alguna lógica mucho más compleja y
+        además es necesaria devolver ese
+        producto al stock necesario deshacer esa
+        orden y demás eso existen varias
+        estrategias para poder hacer ese tipo de
+        manejo de transaccionalidad los muchos
+        servicios pero es patrona básicamente
+        nos ayude entender o implementar
+        soluciones que nos garanticen eso a
+        partir de la implementación de una
+        funcionalidad similar con trance la que
+        existe en el windows los sistemas
+        operativos buenos que nos permite
+        deshacer operaciones que básicamente se
+        hicieron antes y que por un fallo en una
+        operación más adelante en la
+        arquitectura no se pudieron completar y
+        hace falta deshacerlo espacio usada en
+        los vividores otros los patrones
+        fundamentales son los patrones de acceso
+        a dos entre ellos está el padrón tabla
+        índices de windows tengo el propio de la
+        base de datos orientadas
+        estructura de seguro porque nos permiten
+        crear un índice para lance sábado y
+        facilitar la rápida la rapidez de acceso
+        a la información el padrón harding
+        de segmentación de información que puede
+        ser tanto vertical como horizontal
+        presente en tecnologías como las teen
+        search que además presenta una
+        tecnología de chat y muy buena para
+        poder distribuir la información de los
+        documentos a través de todo el sistema y
+        poder garantizar y reutilizar primero
+        más no poder garantizar la escalabilidad
+        horizontal y poder poder acceder de una
+        manera mucho más sencilla de abogados
+        otro de los cuatro otros de los padrones
+        o de las buenas prácticas recomendadas
+        es una base de datos con servicios
+        básicamente nos indica que al menos
+        debería haber una base de datos de un
+        micro servicio independiente una de
+        otras para garantizar que además de
+        poder escalar en micro servicio en sí la
+        infraestructura de resistencia asociadas
+        en microservicios pueda escalar y lo
+        otro es que cada misión debería ser
+        dueño de sus actos
+        lo menos posible de datos de otros
+        microservicios para disminuir también
+        temas relacionados con el tema de la
+        transición ali that que como les decía
+        es el problema más más grave o más serio
+        de la infraestructura microservicios
+        otro de los patrones se q rs es un
+        patrón muy común que se usa que
+        básicamente es para separar operaciones
+        de lectura y escritura ya que cuando uno
+        persiste información básicamente cuando
+        la va a leer no la leen la misma forma
+        que la p existe normalmente en la
+        programación basar un monolito o en la
+        programación pasar microservicios
+        cualquier esquema de programación se
+        usan muchos deseos para obtener esa
+        información bueno básicamente eso nos
+        está diciendo efectivamente la forma o
+        la entidad que nosotros las formas que
+        nosotros leemos por lo tanto se pueden
+        separar esas operaciones de lectura y
+        escritura para hacerlo más rápido
+        incluso existen enfoques donde las
+        operaciones de lectura de escritura sea
+        una base a dos separadas de las
+        operaciones de lectura para garantizar
+        en mayor rapidez y flexibilidad ahora
+        obtener información otros los grupos de
+        patrones importantes en los patrones
+        relacionados con la aceptabilidad la
+        aceptabilidad es aquella práctica que
+        nos va a permitir poder ir monitoreando
+        toda la infraestructura de servicios que
+        tenemos y poder darle seguimiento a unos
+        microservicios pero con información de
+        alguna forma más centralizada para
+        facilitar la visualización y el acceso a
+        esta información entre los micros entre
+        los patrones de estabilidad importante
+        están el patrón de agregación de los que
+        básicamente nos ayuda a tener todos los
+        que es que van desarrollando estos
+        mismos servicios en un único lugar esta
+        agregación de los va a permitir a partir
+        de tener todos los bloques un único
+        lugar puedes darle seguimiento a un
+        evento determinado que ocurra a través
+        de varios microservicios y poder
+        determinar mucho más rápido la casos
+        incluso hay sistemas que nos ayudan a
+        predecir este tipo de cosas como el
+        módulo de machine lending de elastic los
+        talibán
+        y existen muy buenas tecnologías incluso
+        de código abierto que nos facilitan este
+        tipo de tema
+        otro de los patrones de shepherd
+        importantes es el patrón de monitoreo de
+        puntos finales el monitoreo del punto
+        final es clave y que además es muy útil
+        porque se integra con el servicio de
+        descubrimiento para poder determinar si
+        un micro servicio determinado está
+        activo o no está activo determinado
+        momento esto en palabras mucho más
+        simples para los que ya conocen es el
+        famoso end point
+        el famoso en point es la real que está
+        disponible en casi todos los micro
+        servicios y que nos ayuda a poder
+        monitorear y podemos liberarlos de los
+        servicios y el otro de los patrones que
+        vamos a ver es el padrón de métrica de
+        rendimiento es patrón de métricas de
+        rendimiento es un patrón más enfocado a
+        las métricas de negocio
+        y básicamente nos permiten determinar
+        para determinar los medios de negocio y
+        poder ir evaluando cómo se va
+        desarrollando este objetivo dentro del
+        negocio y el otro para el otro patrón de
+        observar el importante es el padrón de
+        trasero distribuido y tributos y el
+        padrón de trasero distribuir
+        en un patrón sumamente importante que
+        nos ayuda a poder conocer cuando un
+        request llega nuestra infraestructura y
+        los servicios puedes darle seguimiento a
+        ese request a través de toda la
+        infraestructura hasta que llegue a su
+        destino incluso la respuesta que emite
+        hacia el cliente que hizo el request y
+        poder ir viendo los tiempos información
+        como por ejemplo los tiempos de
+        respuesta en qué microservicios se
+        demora más en ejecutar la operación
+        cuál es cuáles son informaciones
+        adicionales que se van a añadir los
+        buscar en los servicios los request y
+        los responsos que añaden cada mayor
+        servicio de la infraestructura a ese a
+        ese ritmo original que fue creado en un
+        padrón su momento importante y que
+        además es casi obligatorio en una
+        infraestructura que sea medianamente
+        compleja el otro grupo de patrones que
+        vamos a ver es el último grupo de
+        patrones que son básicamente dos
+        patrones importantes para la integración
+        con servicios externos luego añadir en
+        esta categoría pero básicamente lo que
+        nos permiten es poder de alguna manera
+        decirnos cómo se va a relacionar nuestra
+        infraestructura con elementos externos a
+        vientos también pudiera estar el padrón
+        pero bueno lo añadimos
+        un grupo de patrones de integración en
+        los patrones para servicios externos
+        podemos encontrar el padrón un back from
+        game que esto es un patrón básicamente
+        que nos está diciendo que para cada
+        afronten que tenga nuestra aplicación
+        debemos tener un paquete correspondiente
+        básicamente muchas veces ocurre que
+        tenemos como front-end una aplicación
+        web y una aplicación móvil y no siempre
+        la información que se maneja en él en la
+        aplicación móvil es la misma que se
+        maneja en la aplicación web y terminamos
+        entonces el lado a berlin añadiendo los
+        específicas para cada uno de estos
+        micros bicis eso la gente debería ser
+        programado en baja en diferente y cada
+        wagen ofrece su información a sus
+        fuentes correspondiente y el otro de los
+        micros oficios el otro cabrales pendón
+        es el padrón capa anticorrupción este es
+        un patrón sumamente importante y que
+        está muy relacionado con el patrón
+        strangler y burger el patrón capa en de
+        corrupción es un patrón que nos
+        garantiza no nos va a decir como
+        nosotros debemos integrarnos con
+        servicios externos de terceros para
+        evitar que la definición o los contratos
+        asociados a esos servicios externos
+        corrompan los micro servicios de
+        internet es nuestra infraestructura por
+        ejemplo supongamos que tenemos estamos
+        desarrollando la arquitectura de
+        microservicios muy buenas con lápices
+        productos y muchas tecnologías modernas
+        y básicamente necesitamos integrarnos
+        con una pide un banco de un tercero y
+        esas fichas desarrollar una tecnología
+        más antigua sólo gml y básicamente no
+        queremos añadir esa rodilla del cliente
+        de cómo conectarnos a esa
+        a xavi swap desde en desde dentro del
+        micro servicio de la solución de los
+        proponen a pantic o función es crear un
+        mismo servicio externo que se encargue
+        de hacer una traducción de protocolos e
+        incluso traducción que sea necesaria
+        para poder a partir de las tecnologías
+        modernas que nosotros tenemos en nuestra
+        infraestructura poder conectar nuevos
+        servicios externos o con servicios
+        internos propios de la infraestructura
+        pero que la definición de los contratos
+        de acceso a esos servicios no corrompa
+        de ninguna forma las buenas prácticas
+        que estamos implementando dentro de
+        nuestra arquitectura de los servicios
+        hasta aquí el primer punto de la
+        presentación de las charlas relacionados
+        con el tema de los patrones que debemos
+        conocer para desarrollar microservicios
+        estos patrones son importantes y son
+        sumamente claves para poder convertirse
+        en un buen desarrollador de
+        microservicios</P>
+</body>
+</html>
